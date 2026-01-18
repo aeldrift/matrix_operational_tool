@@ -36,6 +36,39 @@ print(A)
 print("\nMatrix B:")
 print(B)
 
+while True:
+    print("\n--- Matrix Operations Menu ---")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Transpose of Matrix A")
+    print("4. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        if A.shape == B.shape:
+            print("\nResult of Addition:")
+            print(A + B)
+        else:
+            print("Addition not possible (different dimensions)")
+
+    elif choice == "2":
+        if A.shape == B.shape:
+            print("\nResult of Subtraction:")
+            print(A - B)
+        else:
+            print("Subtraction not possible (different dimensions)")
+
+    elif choice == "3":
+        print("\nTranspose of Matrix A:")
+        print(A.T)
+
+    elif choice == "4":
+        print("Exiting program...")
+        break
+
+    else:
+        print("Invalid choice. Try again.")
 
  
  
