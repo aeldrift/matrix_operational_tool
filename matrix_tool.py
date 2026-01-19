@@ -21,7 +21,7 @@ def get_matrix(name):
                 matrix.append(row)
                 break
             else:
-                print(f"❌ Error: Please enter exactly {cols} values.")
+                print(f"Error: Please enter exactly {cols} values.")
 
     return np.array(matrix)
 
